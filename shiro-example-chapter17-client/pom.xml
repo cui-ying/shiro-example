@@ -28,7 +28,8 @@
         <dependency>
             <groupId>org.apache.oltu.oauth2</groupId>
             <artifactId>org.apache.oltu.oauth2.client</artifactId>
-            <version>0.31</version>
+            <version>1.0.2</version>
+            <type>bundle</type>
         </dependency>
 
 
@@ -136,6 +137,12 @@
     <build>
         <finalName>chapter17-client</finalName>
         <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+            </plugin>
+
             <plugin>
                 <groupId>org.mortbay.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
